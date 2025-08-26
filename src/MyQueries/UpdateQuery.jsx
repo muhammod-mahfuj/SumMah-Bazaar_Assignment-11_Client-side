@@ -20,7 +20,7 @@ const UpdateQuery = () => {
           date: new Date(),
          }
 
-         fetch(`http://localhost:3000/queries/${query._id}`, {
+         fetch(`https://summah-bazaar-server-4bd2hiudw-mahfuj543s-projects.vercel.app/queries/${query._id}`, {
              method:"PATCH",
              headers: {
                 "content-type" : "application/json"

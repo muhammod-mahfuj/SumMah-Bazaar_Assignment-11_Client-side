@@ -7,13 +7,14 @@ const RecommendationForMe = () => {
 
     useEffect(() => {
        if(users?.email){
-           fetch(`http://localhost:3000/recommendations?userEmail=${users.email}`)
+           fetch(`https://summah-bazaar-server-4bd2hiudw-mahfuj543s-projects.vercel.app/recommendations?userEmail=${users.email}`)
            .then(res => res.json())
            .then(data => setRecommendations(data))
        }
     },[users?.email]);
+    
 
-    console.log(recommendations);
+    console.log(recommendations);firebase 
 
     return (
      <div className='my-10'>

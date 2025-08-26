@@ -25,7 +25,7 @@ const Recommendations = ({Query}) => {
                 date: new Date(),
          };
 
-         fetch("http://localhost:3000/recommendations", {
+         fetch("https://summah-bazaar-server-4bd2hiudw-mahfuj543s-projects.vercel.app/recommendations", {
             method: "POST",
             headers: {
                 "content-type" : "application/json"

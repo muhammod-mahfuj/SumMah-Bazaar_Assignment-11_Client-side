@@ -16,7 +16,7 @@ const MyQueries = () => {
 
 
         useEffect(() => {
-           fetch(`http://localhost:3000/queries?email=${users.email}`) //  just current user queries
+           fetch(`https://summah-bazaar-server-4bd2hiudw-mahfuj543s-projects.vercel.app/queries?email=${users.email}`) //  just current user queries
            .then(res => res.json())
            .then(data => setQueries(data))
         },[users.email]);

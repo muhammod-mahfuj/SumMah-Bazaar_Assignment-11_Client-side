@@ -19,7 +19,7 @@ const MyRecommendations = () => {
             confirmButtonText: "Yes, delete it!"
             }).then((result) => {
             if (result.isConfirmed) {
-               fetch(`http://localhost:3000/recommendations/${id}`, {
+               fetch(`https://summah-bazaar-server-4bd2hiudw-mahfuj543s-projects.vercel.app/recommendations/${id}`, {
                 method: "DELETE"
                })
                .then( res => res.json())

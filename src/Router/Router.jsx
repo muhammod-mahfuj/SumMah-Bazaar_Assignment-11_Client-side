@@ -45,22 +45,22 @@ const router = createBrowserRouter([
             {
               path: '/myQueries/:id',
               element: <PrivateRoute><QueriesDetails></QueriesDetails></PrivateRoute>,
-              loader : ({params}) => fetch(`http://localhost:3000/queries/${params.id}`)
+              loader : ({params}) => fetch(`https://summah-bazaar-server-4bd2hiudw-mahfuj543s-projects.vercel.app/queries/${params.id}`)
             },
                {
               path: '/update/:id',
               element: <PrivateRoute><UpdateQuery></UpdateQuery></PrivateRoute>,
-              loader : ({params}) => fetch(`http://localhost:3000/queries/${params.id}`)
+              loader : ({params}) => fetch(`https://summah-bazaar-server-4bd2hiudw-mahfuj543s-projects.vercel.app/queries/${params.id}`)
             },
             {
               path: "/queries",
               element: <Queries></Queries>,
-              loader : () => fetch(`http://localhost:3000/queries`)
+              loader : () => fetch(`https://summah-bazaar-server-4bd2hiudw-mahfuj543s-projects.vercel.app/queries`)
             },
             {
               path: "/myrecommendations",
               element: <MyRecommendations></MyRecommendations>,
-              loader: () => fetch(`http://localhost:3000/recommendations`)
+              loader: () => fetch(`https://summah-bazaar-server-4bd2hiudw-mahfuj543s-projects.vercel.app/recommendations`)
             },
             {
               path: '/recommendationForMe',

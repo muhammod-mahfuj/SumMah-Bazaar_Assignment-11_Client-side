@@ -21,7 +21,7 @@ const AddQuery = () => {
           userImage : users.photoURL
          }
 
-         fetch("http://localhost:3000/queries", {
+         fetch("https://summah-bazaar-server-4bd2hiudw-mahfuj543s-projects.vercel.app/queries", {
              method:"POST",
              headers: {
                 "content-type" : "application/json"
